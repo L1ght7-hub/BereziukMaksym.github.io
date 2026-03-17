@@ -1,3 +1,38 @@
 body {
-  background-color: #ecfbe6;
+  background-color: #f0f2f5;
+  color: #232f3e;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #232f3e, #4ea1d3); /* Градієнт у фоні */
+  color: white;
+  padding: 40px;
+  text-align: left;
+  border-bottom: 5px solid #232f3e;
+}
+
+main {
+  display: grid; /* Використання Grid */
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  padding: 20px;
+  border-left: 10px solid #4ea1d3; /* Обрамлення збоку */
+}
+
+/* Адаптивність: на мобілках Grid стає в одну колонку */
+@media (max-width: 375px) {
+  main {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
 }
