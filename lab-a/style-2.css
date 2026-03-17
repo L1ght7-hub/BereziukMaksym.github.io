@@ -15,7 +15,7 @@ header {
 }
 
 main {
-  display: grid; /* Використання Grid */
+  display: grid; 
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 40px;
