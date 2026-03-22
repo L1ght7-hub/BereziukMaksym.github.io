@@ -1,11 +1,9 @@
-/* --- STYL 1: MODERN SPACE --- */
-
 body {
-  /* ZMIANA: Zmieniamy 'fixed' na 'scroll', aby screenshot działał jak w Stylu 2 */
+
   background: linear-gradient(rgba(27, 39, 53, 0.8), rgba(9, 10, 15, 0.9)),
   url('assets/pobrane.jpg');
   background-size: cover;
-  background-attachment: scroll; /* To naprawia biały dół na screenie! */
+  background-attachment: scroll;
   background-position: center;
 
   color: #ffffff;
@@ -13,7 +11,7 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  min-height: 100vh; /* Dodajemy to, by tło zawsze było przynajmniej na cały ekran */
+  min-height: 100vh;
 }
 
 header {
@@ -39,7 +37,7 @@ main {
   backdrop-filter: blur(5px);
 }
 
-/* Sekcje z obrazkami obok tekstu */
+
 .flex-section {
   display: flex;
   gap: 25px;
@@ -47,7 +45,7 @@ main {
   align-items: flex-start;
 }
 
-/* Obrazki są teraz widoczne */
+
 .science-img {
   display: block !important;
   width: 320px;
@@ -75,7 +73,7 @@ main {
 footer {
   text-align: center;
   margin-top: 40px;
-  padding-bottom: 40px; /* Dodatkowy odstęp na dole screena */
+  padding-bottom: 40px;
   color: #888;
 }
 
