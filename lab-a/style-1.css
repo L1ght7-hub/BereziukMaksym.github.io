@@ -1,33 +1,90 @@
+/* --- STYL 1: MODERN SPACE --- */
+
 body {
-  background: radial-gradient(circle, #1b2735 0%, #090a0f 100%);
+  /* ZMIANA: Zmieniamy 'fixed' na 'scroll', aby screenshot działał jak w Stylu 2 */
+  background: linear-gradient(rgba(27, 39, 53, 0.8), rgba(9, 10, 15, 0.9)),
+  url('assets/pobrane.jpg');
+  background-size: cover;
+  background-attachment: scroll; /* To naprawia biały dół na screenie! */
+  background-position: center;
+
   color: #ffffff;
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-  min-height: 100vh;
+  min-height: 100vh; /* Dodajemy to, by tło zawsze było przynajmniej na cały ekran */
 }
 
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 30px;
-  border: 2px solid #00d4ff; /* Візуальне обрамлення */
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+header {
+  text-align: center;
+  padding: 40px 0;
 }
 
 h1 {
-  text-align: center;
   color: #00d4ff;
   font-size: 2.5rem;
   text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
-/* Адаптивність для мобільних (375px) */
-@media (max-width: 600px) {
-  body { padding: 10px; }
-  h1 { font-size: 1.8rem; }
-  main { padding: 15px; border-radius: 0; }
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border: 2px solid #00d4ff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+/* Sekcje z obrazkami obok tekstu */
+.flex-section {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+}
+
+/* Obrazki są teraz widoczne */
+.science-img {
+  display: block !important;
+  width: 320px;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #00d4ff;
+  transition: transform 0.3s ease;
+}
+
+.science-img:hover {
+  transform: scale(1.05);
+}
+
+.mission-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.mission-list li::before {
+  content: "✦ ";
+  color: #00d4ff;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px; /* Dodatkowy odstęp na dole screena */
+  color: #888;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+  .flex-section {
+    flex-direction: column;
+  }
+  .science-img {
+    width: 100%;
+  }
 }
