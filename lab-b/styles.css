@@ -1,5 +1,5 @@
 body {
-  background-color: #f3fff3; /* Твій колір фону */
+  background-color: #f3fff3;
   font-family: Arial, sans-serif;
   max-width: 600px;
   margin: 20px auto;
@@ -11,7 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px dashed #ccc; /* Як на макеті [cite: 43] */
+  border-bottom: 1px dashed #ccc; 
   background: white;
   margin-bottom: 5px;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 mark {
-  background-color: yellow; /* Підсвічування пошуку [cite: 38] */
+  background-color: yellow; 
 }
 
 .delete-btn {
