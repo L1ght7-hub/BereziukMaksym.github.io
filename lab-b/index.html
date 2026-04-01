@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bereziuk Maksym (55735) - PTW LAB B</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+<h1>Lista zadań</h1>
+
+<div class="search-container">
+    <input type="text" id="searchInput" class="search-field" placeholder="Wyszukaj zadanie (min. 2 znaki)...">
+</div>
+
+<div id="todoContainer" class="sentences-list"></div>
+
+<div class="add-task-form">
+    <h2>Dodaj nowe zadanie</h2>
+    <form id="taskForm">
+        <div class="form-group">
+            <label for="taskInput">Treść zadania:</label>
+            <input type="text" id="taskInput" placeholder="Wpisz nowe zadanie..." minlength="3" maxlength="255" required>
+        </div>
+        <div class="form-group">
+            <label for="taskDeadline">Termin wykonania:</label>
+            <input type="datetime-local" id="taskDeadline">
+        </div>
+        <button type="submit" class="add-button">Zapisz</button>
+    </form>
+</div>
+</body>
+</html>
