@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Maksym Bereziuk - Puzzle Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+<h1>Maksym Bereziuk (55735) - LAB C</h1>
+
+<div class="menu">
+    <button id="getLocation">Moja lokalizacja</button>
+    <button id="downloadMap">Pobierz mapę</button>
+    <button id="notifPerm">Zgoda na powiadomienia</button>
+</div>
+
+<div class="container">
+    <div class="box">
+        <h3>1. Mapa dynamiczna</h3>
+        <div id="map"></div>
+    </div>
+
+    <div class="box">
+        <h3>2. Podgląd (Raster)</h3>
+        <div id="rasterMap"></div>
+    </div>
+
+    <div class="box">
+        <h3>3. Rozrzucone puzzle</h3>
+        <div id="shuffledTable" class="puzzle-area"></div>
+    </div>
+
+    <div class="box">
+        <h3>4. Miejsce układania</h3>
+        <div id="dropZone" class="puzzle-area"></div>
+    </div>
+</div>
+</body>
+</html>
