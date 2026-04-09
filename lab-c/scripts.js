@@ -76,7 +76,7 @@ function createPuzzles(sourceCanvas) {
     piece.dataset.correctCol = col;
     piece.dataset.id = i;
 
-    // Випадкова позиція в Блоці 3
+    
     piece.style.left = Math.random() * (table.clientWidth - w) + 'px';
     piece.style.top = Math.random() * (table.clientHeight - h) + 'px';
     piece.draggable = true;
