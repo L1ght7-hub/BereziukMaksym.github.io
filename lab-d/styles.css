@@ -1,0 +1,162 @@
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Гарний градієнт */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #2d3436;
+}
+
+
+.app-wrapper {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  max-width: 650px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  background: -webkit-linear-gradient(#667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+input {
+  flex: 1;
+  padding: 15px 20px;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+button {
+  padding: 15px 30px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+
+.current-card {
+  background: linear-gradient(to right, #ffffff, #f9fafb);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #f0f0f0;
+}
+
+
+.forecast-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+.forecast-hour-card {
+  background: white;
+  border-radius: 16px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.forecast-hour-card:hover {
+  transform: scale(1.02);
+  border-color: #667eea;
+}
+
+.date-header {
+  font-size: 0.85rem;
+  color: #636e72;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 5px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content img {
+  width: 64px;
+  height: 64px;
+}
+
+.info {
+  text-align: right;
+}
+
+.temp {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d3436;
+}
+
+.details {
+  font-size: 0.9rem;
+  color: #b2bec3;
+}
+
+
+@media (max-width: 500px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .app-wrapper {
+    padding: 20px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info {
+    text-align: center;
+  }
+}
