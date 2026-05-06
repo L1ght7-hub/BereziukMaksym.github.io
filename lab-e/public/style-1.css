@@ -1,0 +1,42 @@
+body {
+  /* Змінено шлях: якщо файл у public, звертаємось просто через assets/ */
+
+  background: linear-gradient(rgba(27, 39, 53, 0.8), rgba(9, 10, 15, 0.9)),
+  url('/assets/pobrane.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+  color: #ffffff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+header h1 {
+  color: #00d4ff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border: 2px solid #00d4ff;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.flex-section {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.science-img {
+  width: 320px;
+  border-radius: 10px;
+  border: 1px solid #00d4ff;
+}
